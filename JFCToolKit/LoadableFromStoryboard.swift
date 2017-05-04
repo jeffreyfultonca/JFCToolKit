@@ -25,6 +25,7 @@ public extension LoadableFromStoryboard where Self: UIViewController {
         return String(describing: self)
     }
     
+    /// See `LoadableFromStoryboard` protocol documentation.
     static func loadFromStoryboard(in bundle: Bundle? = nil) -> Self {
         let storyboard = UIStoryboard(name: Self.storyboardFilename, bundle: bundle)
         
