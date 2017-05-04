@@ -8,12 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		004907661EBB9BC2005AEEFA /* JFCToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 004907641EBB9BC2005AEEFA /* JFCToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E330D51EBBA64B00EC6A40 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330D31EBBA64B00EC6A40 /* AsyncOperation.swift */; };
+		00E330D61EBBA64B00EC6A40 /* AsyncOperationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330D41EBBA64B00EC6A40 /* AsyncOperationError.swift */; };
+		00E330DA1EBBA68500EC6A40 /* AsyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330D91EBBA68500EC6A40 /* AsyncResult.swift */; };
+		00E330DD1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330DC1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift */; };
+		00E330E01EBBA7C800EC6A40 /* DependencyInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330DF1EBBA7C800EC6A40 /* DependencyInjectable.swift */; };
+		00E330E41EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330E21EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift */; };
+		00E330E51EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330E31EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift */; };
+		00E330E81EBBA87300EC6A40 /* KeyboardNotificationHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330E71EBBA87300EC6A40 /* KeyboardNotificationHandling.swift */; };
+		00E330EB1EBBA92200EC6A40 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330EA1EBBA92200EC6A40 /* NibLoadable.swift */; };
+		00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */; };
+		00E330F11EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */; };
+		00E330F41EBBAA0E00EC6A40 /* TypedStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */; };
+		00E330F71EBBACA800EC6A40 /* TypedSegueHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */; };
+		00E330FA1EBBAF5900EC6A40 /* TypedSegueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		004907611EBB9BC2005AEEFA /* JFCToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JFCToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		004907641EBB9BC2005AEEFA /* JFCToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFCToolKit.h; sourceTree = "<group>"; };
 		004907651EBB9BC2005AEEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E330D31EBBA64B00EC6A40 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		00E330D41EBBA64B00EC6A40 /* AsyncOperationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperationError.swift; sourceTree = "<group>"; };
+		00E330D91EBBA68500EC6A40 /* AsyncResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncResult.swift; sourceTree = "<group>"; };
+		00E330DC1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewControllerEmbeddable.swift; sourceTree = "<group>"; };
+		00E330DF1EBBA7C800EC6A40 /* DependencyInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectable.swift; sourceTree = "<group>"; };
+		00E330E21EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignedInXibAndNestableInOtherXibsView.swift; sourceTree = "<group>"; };
+		00E330E31EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignedInXibAndNestableInOtherXibsViewProtocol.swift; sourceTree = "<group>"; };
+		00E330E71EBBA87300EC6A40 /* KeyboardNotificationHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHandling.swift; sourceTree = "<group>"; };
+		00E330EA1EBBA92200EC6A40 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
+		00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedStoryboard.swift; sourceTree = "<group>"; };
+		00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedSegueHandling.swift; sourceTree = "<group>"; };
+		00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedSegueError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +74,120 @@
 		004907631EBB9BC2005AEEFA /* JFCToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				00E330D71EBBA65100EC6A40 /* AsyncOperation */,
+				00E330DB1EBBA68800EC6A40 /* AsyncResult */,
+				00E330DE1EBBA74B00EC6A40 /* ChildViewControllerEmbeddable */,
+				00E330E11EBBA7E000EC6A40 /* DependencyInjectable */,
+				00E330E61EBBA82600EC6A40 /* DesignedInXibAndNestableInOtherXibsView */,
+				00E330E91EBBA87900EC6A40 /* KeyboardNotificationHandling */,
+				00E330EC1EBBA92500EC6A40 /* NibLoadable */,
+				00E330EF1EBBA9A700EC6A40 /* ReuseIdentifiable */,
+				00E330F21EBBA9D300EC6A40 /* StoryboardIdentifiable */,
+				00E330F81EBBACAE00EC6A40 /* TypedSegueHandling */,
+				00E330F51EBBAA1500EC6A40 /* TypedStoryboard */,
+				00E330D81EBBA65F00EC6A40 /* Supporting */,
+			);
+			path = JFCToolKit;
+			sourceTree = "<group>";
+		};
+		00E330D71EBBA65100EC6A40 /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				00E330D31EBBA64B00EC6A40 /* AsyncOperation.swift */,
+				00E330D41EBBA64B00EC6A40 /* AsyncOperationError.swift */,
+			);
+			name = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		00E330D81EBBA65F00EC6A40 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				004907641EBB9BC2005AEEFA /* JFCToolKit.h */,
 				004907651EBB9BC2005AEEFA /* Info.plist */,
 			);
-			path = JFCToolKit;
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		00E330DB1EBBA68800EC6A40 /* AsyncResult */ = {
+			isa = PBXGroup;
+			children = (
+				00E330D91EBBA68500EC6A40 /* AsyncResult.swift */,
+			);
+			name = AsyncResult;
+			sourceTree = "<group>";
+		};
+		00E330DE1EBBA74B00EC6A40 /* ChildViewControllerEmbeddable */ = {
+			isa = PBXGroup;
+			children = (
+				00E330DC1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift */,
+			);
+			name = ChildViewControllerEmbeddable;
+			sourceTree = "<group>";
+		};
+		00E330E11EBBA7E000EC6A40 /* DependencyInjectable */ = {
+			isa = PBXGroup;
+			children = (
+				00E330DF1EBBA7C800EC6A40 /* DependencyInjectable.swift */,
+			);
+			name = DependencyInjectable;
+			sourceTree = "<group>";
+		};
+		00E330E61EBBA82600EC6A40 /* DesignedInXibAndNestableInOtherXibsView */ = {
+			isa = PBXGroup;
+			children = (
+				00E330E21EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift */,
+				00E330E31EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift */,
+			);
+			name = DesignedInXibAndNestableInOtherXibsView;
+			sourceTree = "<group>";
+		};
+		00E330E91EBBA87900EC6A40 /* KeyboardNotificationHandling */ = {
+			isa = PBXGroup;
+			children = (
+				00E330E71EBBA87300EC6A40 /* KeyboardNotificationHandling.swift */,
+			);
+			name = KeyboardNotificationHandling;
+			sourceTree = "<group>";
+		};
+		00E330EC1EBBA92500EC6A40 /* NibLoadable */ = {
+			isa = PBXGroup;
+			children = (
+				00E330EA1EBBA92200EC6A40 /* NibLoadable.swift */,
+			);
+			name = NibLoadable;
+			sourceTree = "<group>";
+		};
+		00E330EF1EBBA9A700EC6A40 /* ReuseIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */,
+			);
+			name = ReuseIdentifiable;
+			sourceTree = "<group>";
+		};
+		00E330F21EBBA9D300EC6A40 /* StoryboardIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */,
+			);
+			name = StoryboardIdentifiable;
+			sourceTree = "<group>";
+		};
+		00E330F51EBBAA1500EC6A40 /* TypedStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */,
+			);
+			name = TypedStoryboard;
+			sourceTree = "<group>";
+		};
+		00E330F81EBBACAE00EC6A40 /* TypedSegueHandling */ = {
+			isa = PBXGroup;
+			children = (
+				00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */,
+				00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */,
+			);
+			name = TypedSegueHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +234,7 @@
 					004907601EBB9BC2005AEEFA = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4DN5KQR8W8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +271,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E330D51EBBA64B00EC6A40 /* AsyncOperation.swift in Sources */,
+				00E330F71EBBACA800EC6A40 /* TypedSegueHandling.swift in Sources */,
+				00E330DA1EBBA68500EC6A40 /* AsyncResult.swift in Sources */,
+				00E330FA1EBBAF5900EC6A40 /* TypedSegueError.swift in Sources */,
+				00E330E81EBBA87300EC6A40 /* KeyboardNotificationHandling.swift in Sources */,
+				00E330EB1EBBA92200EC6A40 /* NibLoadable.swift in Sources */,
+				00E330E41EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift in Sources */,
+				00E330DD1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift in Sources */,
+				00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */,
+				00E330E51EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift in Sources */,
+				00E330F11EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift in Sources */,
+				00E330E01EBBA7C800EC6A40 /* DependencyInjectable.swift in Sources */,
+				00E330D61EBBA64B00EC6A40 /* AsyncOperationError.swift in Sources */,
+				00E330F41EBBAA0E00EC6A40 /* TypedStoryboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -228,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -242,6 +395,7 @@
 		0049076A1EBB9BC2005AEEFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DN5KQR8W8;
@@ -254,6 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.JFCToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -261,6 +416,7 @@
 		0049076B1EBB9BC2005AEEFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DN5KQR8W8;
@@ -296,6 +452,7 @@
 				0049076B1EBB9BC2005AEEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
