@@ -18,10 +18,7 @@
 		00E330E81EBBA87300EC6A40 /* KeyboardNotificationHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330E71EBBA87300EC6A40 /* KeyboardNotificationHandling.swift */; };
 		00E330EB1EBBA92200EC6A40 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330EA1EBBA92200EC6A40 /* NibLoadable.swift */; };
 		00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */; };
-		00E330F11EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */; };
-		00E330F41EBBAA0E00EC6A40 /* TypedStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */; };
-		00E330F71EBBACA800EC6A40 /* TypedSegueHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */; };
-		00E330FA1EBBAF5900EC6A40 /* TypedSegueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */; };
+		00E331621EBBE03600EC6A40 /* LoadableFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E331611EBBE03600EC6A40 /* LoadableFromStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +35,7 @@
 		00E330E71EBBA87300EC6A40 /* KeyboardNotificationHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHandling.swift; sourceTree = "<group>"; };
 		00E330EA1EBBA92200EC6A40 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
-		00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
-		00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedStoryboard.swift; sourceTree = "<group>"; };
-		00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedSegueHandling.swift; sourceTree = "<group>"; };
-		00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypedSegueError.swift; sourceTree = "<group>"; };
+		00E331611EBBE03600EC6A40 /* LoadableFromStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableFromStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +73,10 @@
 				00E330DE1EBBA74B00EC6A40 /* ChildViewControllerEmbeddable */,
 				00E330E11EBBA7E000EC6A40 /* DependencyInjectable */,
 				00E330E61EBBA82600EC6A40 /* DesignedInXibAndNestableInOtherXibsView */,
+				00E331601EBBE02700EC6A40 /* LoadableFromStoryboard */,
 				00E330E91EBBA87900EC6A40 /* KeyboardNotificationHandling */,
 				00E330EC1EBBA92500EC6A40 /* NibLoadable */,
 				00E330EF1EBBA9A700EC6A40 /* ReuseIdentifiable */,
-				00E330F21EBBA9D300EC6A40 /* StoryboardIdentifiable */,
-				00E330F81EBBACAE00EC6A40 /* TypedSegueHandling */,
-				00E330F51EBBAA1500EC6A40 /* TypedStoryboard */,
 				00E330D81EBBA65F00EC6A40 /* Supporting */,
 			);
 			path = JFCToolKit;
@@ -165,29 +157,12 @@
 			name = ReuseIdentifiable;
 			sourceTree = "<group>";
 		};
-		00E330F21EBBA9D300EC6A40 /* StoryboardIdentifiable */ = {
+		00E331601EBBE02700EC6A40 /* LoadableFromStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				00E330F01EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift */,
+				00E331611EBBE03600EC6A40 /* LoadableFromStoryboard.swift */,
 			);
-			name = StoryboardIdentifiable;
-			sourceTree = "<group>";
-		};
-		00E330F51EBBAA1500EC6A40 /* TypedStoryboard */ = {
-			isa = PBXGroup;
-			children = (
-				00E330F31EBBAA0E00EC6A40 /* TypedStoryboard.swift */,
-			);
-			name = TypedStoryboard;
-			sourceTree = "<group>";
-		};
-		00E330F81EBBACAE00EC6A40 /* TypedSegueHandling */ = {
-			isa = PBXGroup;
-			children = (
-				00E330F61EBBACA800EC6A40 /* TypedSegueHandling.swift */,
-				00E330F91EBBAF5900EC6A40 /* TypedSegueError.swift */,
-			);
-			name = TypedSegueHandling;
+			name = LoadableFromStoryboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,19 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E330D51EBBA64B00EC6A40 /* AsyncOperation.swift in Sources */,
-				00E330F71EBBACA800EC6A40 /* TypedSegueHandling.swift in Sources */,
 				00E330DA1EBBA68500EC6A40 /* AsyncResult.swift in Sources */,
-				00E330FA1EBBAF5900EC6A40 /* TypedSegueError.swift in Sources */,
 				00E330E81EBBA87300EC6A40 /* KeyboardNotificationHandling.swift in Sources */,
 				00E330EB1EBBA92200EC6A40 /* NibLoadable.swift in Sources */,
 				00E330E41EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsView.swift in Sources */,
+				00E331621EBBE03600EC6A40 /* LoadableFromStoryboard.swift in Sources */,
 				00E330DD1EBBA74500EC6A40 /* ChildViewControllerEmbeddable.swift in Sources */,
 				00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */,
 				00E330E51EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift in Sources */,
-				00E330F11EBBA9BD00EC6A40 /* StoryboardIdentifiable.swift in Sources */,
 				00E330E01EBBA7C800EC6A40 /* DependencyInjectable.swift in Sources */,
 				00E330D61EBBA64B00EC6A40 /* AsyncOperationError.swift in Sources */,
-				00E330F41EBBAA0E00EC6A40 /* TypedStoryboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
