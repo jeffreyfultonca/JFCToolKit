@@ -1,7 +1,43 @@
 import UIKit
 
-public protocol ChildViewControllerEmbeddable {
-    associatedtype ChildViewControllerContainer
+/**
+ Enables easy, safe embedding of child view controllers inside conforming UIViewContoller subclasses.
+ 
+ **Usage**
+ 
+ 1. Define the associated `ChildViewControllerContainer` type as an enum with a `String` raw value nested inside the conforming type. Each case corresponds to a container `UIView` which will hold child view controllers:
+ 
+     ```
+     class ViewController: ChildViewControllerEmbeddable {
+         enum ChildViewControllerContainer: String {
+             case map
+             case table
+         }
+     }
+     ```
+ 
+ 2. Add `embeddedChildVCs` property to conforming type:
+    ```
+    var embeddedChildVCs: [ChildViewControllerContainer: UIViewController] = [:]
+    ```
+ 
+ 3. Implement `containerView(for container:) -> UIView` on conforming type mapping each enum case to a corresponding container view:
+    
+    ```
+     func containerView(
+         for container: ChildViewControllerContainer) -> UIView
+     {
+         switch container {
+         case .main: return self.mainContainerView
+         case .lower: return self.lowerContainerView
+         }
+     }
+    ```
+ */
+public protocol ChildViewControllerEmbeddable: class {
+    associatedtype ChildViewControllerContainer: Hashable
+    
+    var embeddedChildVCs: [ChildViewControllerContainer: UIViewController] { get set }
     
     func embed(
         childViewController childVC: UIViewController,
@@ -34,7 +70,6 @@ public extension ChildViewControllerEmbeddable where Self: UIViewController {
         
         let containerView = self.containerView(for: container)
         
-        // TODO: This should almost certainly be done via AutoLayout rather than by frame. Although it doesn't seem to matter... What is up with that? Autoresizing mask?
         childVC.view.frame = containerView.bounds
         
         containerView.addSubview(childVC.view)
@@ -44,5 +79,18 @@ public extension ChildViewControllerEmbeddable where Self: UIViewController {
         previousChildVC?.removeFromParentViewController()
         
         set(childViewController: childVC, forContainer: container)
+    }
+    
+    public func childViewController(
+        for container: ChildViewControllerContainer) -> UIViewController?
+    {
+        return embeddedChildVCs[container]
+    }
+    
+    public func set(
+        childViewController childVC: UIViewController,
+        forContainer container: ChildViewControllerContainer)
+    {
+        embeddedChildVCs[container] = childVC
     }
 }
