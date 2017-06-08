@@ -39,6 +39,10 @@ public protocol ChildViewControllerEmbeddable: class {
     
     var embeddedChildVCs: [ChildViewControllerContainer: UIViewController] { get set }
     
+    func containerView(
+        for container: ChildViewControllerContainer
+    ) -> UIView
+    
     func embed(
         childViewController childVC: UIViewController,
         inContainer container: ChildViewControllerContainer
@@ -48,14 +52,9 @@ public protocol ChildViewControllerEmbeddable: class {
         for container: ChildViewControllerContainer
     ) -> UIViewController?
     
-    func set(
-        childViewController childVC: UIViewController,
-        forContainer container: ChildViewControllerContainer
+    func removeChildViewControler(
+        fromContainer container: ChildViewControllerContainer
     )
-    
-    func containerView(
-        for container: ChildViewControllerContainer
-    ) -> UIView
 }
 
 public extension ChildViewControllerEmbeddable where Self: UIViewController {
@@ -63,22 +62,22 @@ public extension ChildViewControllerEmbeddable where Self: UIViewController {
         childViewController childVC: UIViewController,
         inContainer container: ChildViewControllerContainer)
     {
-        let previousChildVC = childViewController(for: container)
-        previousChildVC?.willMove(toParentViewController: nil)
-        
-        self.addChildViewController(childVC)
+        self.removeChildViewControler(fromContainer: container)
         
         let containerView = self.containerView(for: container)
         
-        childVC.view.frame = containerView.bounds
+        childVC.willMove(toParentViewController: self)
+        childVC.view.willMove(toSuperview: containerView)
         
+        self.addChildViewController(childVC)
         containerView.addSubview(childVC.view)
         
-        childVC.didMove(toParentViewController: self)
-        previousChildVC?.view.removeFromSuperview()
-        previousChildVC?.removeFromParentViewController()
+        embeddedChildVCs[container] = childVC
         
-        set(childViewController: childVC, forContainer: container)
+        childVC.view.frame = containerView.bounds
+        
+        childVC.didMove(toParentViewController: self)
+        childVC.view.didMoveToSuperview()
     }
     
     public func childViewController(
@@ -87,10 +86,15 @@ public extension ChildViewControllerEmbeddable where Self: UIViewController {
         return embeddedChildVCs[container]
     }
     
-    public func set(
-        childViewController childVC: UIViewController,
-        forContainer container: ChildViewControllerContainer)
-    {
-        embeddedChildVCs[container] = childVC
+    public func removeChildViewControler(fromContainer container: ChildViewControllerContainer) {
+        guard let childVC = childViewController(for: container) else { return }
+        
+        childVC.view.willMove(toSuperview: nil)
+        childVC.willMove(toParentViewController: nil)
+        
+        childVC.view.removeFromSuperview()
+        childVC.removeFromParentViewController()
+        
+        embeddedChildVCs[container] = nil
     }
 }
