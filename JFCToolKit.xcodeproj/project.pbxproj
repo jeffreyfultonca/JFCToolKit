@@ -20,6 +20,7 @@
 		00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */; };
 		00E331621EBBE03600EC6A40 /* LoadableFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E331611EBBE03600EC6A40 /* LoadableFromStoryboard.swift */; };
 		00E3316B1EBC096A00EC6A40 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3316A1EBC096A00EC6A40 /* JSONParser.swift */; };
+		00F5E6C51F1EE6950016498F /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F5E6C41F1EE6950016498F /* DispatchQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		00E330ED1EBBA9A100EC6A40 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
 		00E331611EBBE03600EC6A40 /* LoadableFromStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableFromStoryboard.swift; sourceTree = "<group>"; };
 		00E3316A1EBC096A00EC6A40 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		00F5E6C41F1EE6950016498F /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		004907631EBB9BC2005AEEFA /* JFCToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				00F5E6C31F1EE6690016498F /* Extensions */,
 				00E330D71EBBA65100EC6A40 /* AsyncOperation */,
 				00E330DB1EBBA68800EC6A40 /* AsyncResult */,
 				00E330DE1EBBA74B00EC6A40 /* ChildViewControllerEmbeddable */,
@@ -176,6 +179,14 @@
 			name = JSONParser;
 			sourceTree = "<group>";
 		};
+		00F5E6C31F1EE6690016498F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00F5E6C41F1EE6950016498F /* DispatchQueue.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,6 +279,7 @@
 				00E330EE1EBBA9A100EC6A40 /* ReuseIdentifiable.swift in Sources */,
 				00E330E51EBBA81D00EC6A40 /* DesignedInXibAndNestableInOtherXibsViewProtocol.swift in Sources */,
 				00E330E01EBBA7C800EC6A40 /* DependencyInjectable.swift in Sources */,
+				00F5E6C51F1EE6950016498F /* DispatchQueue.swift in Sources */,
 				00E330D61EBBA64B00EC6A40 /* AsyncOperationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
