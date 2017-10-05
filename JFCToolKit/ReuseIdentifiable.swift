@@ -46,3 +46,31 @@ public extension UITableView {
         return cell
     }
 }
+
+public extension UICollectionView {
+    /// Register reusable cell of inferred type with type's reuseIdentifier.
+    public func register<T: ReuseIdentifiable>(reuseIdentifiableClass: T.Type) {
+        self.register(reuseIdentifiableClass, forCellWithReuseIdentifier: T.reuseIdentifier)
+    }
+    
+    /// Dequeues reusable cell of inferred type with type's reuseIdentifier.
+    ///
+    /// - Note `fatalError` occurs if cell type has not been registered with tableView.
+    public func dequeueReusableCell<T: UICollectionViewCell>(
+        for indexPath: IndexPath,
+        file: StaticString = #file,
+        line: UInt = #line) -> T where T: ReuseIdentifiable
+    {
+        guard let cell = dequeueReusableCell(
+            withReuseIdentifier: T.reuseIdentifier,
+            for: indexPath) as? T
+        else {
+            fatalError("Could not dequeue cell with reuseIdentifier -- \(T.reuseIdentifier) --",
+                file: file,
+                line: line
+            )
+        }
+        
+        return cell
+    }
+}

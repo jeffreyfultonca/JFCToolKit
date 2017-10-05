@@ -45,3 +45,18 @@ public extension UITableView {
         self.register(nib, forCellReuseIdentifier: reuseIdentifier)
     }
 }
+
+// MARK: - UICollectionView Extension
+
+public extension UICollectionView {
+    /// Register Nib for inferred type with type's reuseIdentifier.
+    public func registerNib<T>(
+        forClass reuseIdentifiableClass: T.Type,
+        bundle: Bundle?) where T: ReuseIdentifiable, T: NibLoadable
+    {
+        let nib = reuseIdentifiableClass.nib(in: bundle)
+        let reuseIdentifier = reuseIdentifiableClass.reuseIdentifier
+        
+        self.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+    }
+}
